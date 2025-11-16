@@ -1,0 +1,46 @@
+/* 1. CARREGAMENTO DA FONTE: HELIOS EXTENDED */
+/* NOTA: Confirma que la ruta a tu fuente (../assets/fonts/...) es correcta. */
+@font-face {
+    font-family: 'Helios Extended';
+    src: url('../assets/fonts/HeliosExtended-Regular.woff2') format('woff2'),
+         url('../assets/fonts/HeliosExtended-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+/* 2. DEFINICIÓN DE LA ANIMACIÓN SLIDE (Deslizar desde la izquierda) */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%); /* Empieza completamente fuera de la pantalla a la izquierda */
+    opacity: 0; /* Totalmente transparente */
+  }
+  100% {
+    transform: translateX(0); /* Termina en su posición final */
+    opacity: 1; /* Totalmente visible */
+  }
+}
+
+/* 3. CLASE PARA APLICAR LA ANIMACIÓN Y ASEGURAR VISIBILIDAD */
+.slide-in-presentacion {
+  /* IMPRESCINDIBLE: Oculta el elemento al inicio */
+  opacity: 0; 
+  /* Aplicar la animación: nombre, duración (1.2s), curva (ease-out), mantiene el estado final (forwards) */
+  animation: slideInLeft 1.2s ease-out forwards;
+}
+
+/* 4. CLASES DE RETRASO (Opcional, para animar elementos secuencialmente) */
+.slide-in-presentacion.delay-1 {
+    animation-delay: 0.3s;
+}
+.slide-in-presentacion.delay-2 {
+    animation-delay: 0.6s;
+}
+.slide-in-presentacion.delay-3 {
+    animation-delay: 0.9s;
+}
+
+/* 5. APLICACIÓN DE LA FUENTE A TODO EL BODY */
+body {
+    font-family: 'Helios Extended', sans-serif;
+}
