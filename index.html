@@ -1,67 +1,327 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <!-- Meta tags esenciales primero -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!-- SEO Meta Tags -->
+      <meta name="description" content="Portfólio profissional de Milianny Cova - Desenvolvedora Front-end especializada em criar experiências web modernas e responsivas.">
+      <meta name="keywords" content="desenvolvedor web, front-end, portfólio, HTML, CSS, JavaScript">
+      <meta name="author" content="Milianny Cova">
+      
+      <!-- Open Graph para redes sociais -->
+      <meta property="og:title" content="Milianny Cova - Portfólio Profissional">
+      <meta property="og:description" content="Conheça meus projetos e habilidades como desenvolvedora web">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="https://seusite.com/preview.jpg">
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="favicon.png">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Profesional</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/animaciones.css">
-</head>
+      <title>Milianny Cova | Desenvolvedora Front-end</title>
+      
+      <!-- Preconnect para performance -->
+      <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+      
+      <!-- Google Fonts - Tiempos (similar a Claude) -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+      
+      <!-- Estilos -->
+      <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    
-    <header>
-        <nav>
-            <button onclick="location.href='curriculo.html'">Ver meu currículo</button>
-            <button onclick="location.href='#projects'">Ver meus projetos</button>
-            <button class="linkedin-btn">LinkedIn</button>
-        </nav>
-    </header>
+    <body>
+      <!-- Skip to main content para accesibilidad -->
+      <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v9/font/simple-icons.min.css">
 
-    <section class="hero">
-        <button>class'</button>
-        <div class="hero-content">
-            <div class="hero-image"></div> 
-            
-            <div class="slide-in-presentacion">
-                <h1>Olá! Bem-vindo (a)!</h1>
-            </div>
+      <!-- NAVBAR -->
+      <header class="navbar" role="banner">
+        <div class="nav-container">
+          <div class="logo" aria-label="Logo Milianny">
+            <a href="#home">Mili</a>
+          </div>
 
-            <div class="slide-in-presentacion">
-                <p>Obrigado por visitar meu espaço.</p>
-                <p>Aqui você pode saber mais sobre minha carreira, habilidades e projetos em que trabalhei.
-                    Sinta-se à vontade para explorar.</p>
-            </div>
-            <div>
-                <div class="cta-button-container">
-            <a href="#lindin-btn" class="btn-cta">
-                linkedin-btn
-            </a>
+          <button class="mobile-menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+
+          <nav aria-label="Navegação principal">
+            <ul class="nav-links" role="list">
+              <li><a href="#curriculum" data-i18n="curriculum">Currículo</a></li>
+              <li><a href="#projects" data-i18n="projects">Projetos</a></li>
+              <li><a href="#contact" data-i18n="contact">Contato</a></li>
+              <li><a href="#about" data-i18n="about">Sobre Mim</a></li>
+            </ul>
+          </nav>
+
+          <!-- Selector de idioma -->
+          <div class="language-selector">
+            <button class="lang-btn" data-lang="pt" aria-label="Mudar para Português">PT</button>
+            <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+            <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
+          </div>
         </div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="simple-hero" id="home" aria-labelledby="hero-title">
+          <div class="hero-wrapper">
+
+            <div class="hero-text">
+              <h1 id="hero-title">Olá! Bem-vindo(a)!</h1>
+              
+              <p class="hero-description">
+                Obrigada por visitar meu espaço.
+                Aqui você pode saber mais sobre minha carreira,
+                habilidades e projetos em que trabalhei.
+              </p>
+
+              <p class="hero-cta-text">
+                
+              </p>
+
+              <div class="social-icons" role="list" aria-label="Redes sociais">
+                <a
+                  href="https://github.com/Miliyoga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar meu perfil no GitHub"
+                  class="social-link"
+                >
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
                 </a>
+
+                <a
+                  href="https://linkedin.com/in/mili-cova"
+                  target="_"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar meu perfil no LinkedIn"
+                  class="social-link"
+                >
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+              </div>
+
+
+              <a href="#contact" class="btn-primary">Agende uma consultar</a>
             </div>
-            <div>
 
+            <div class="hero-image">
+              <img 
+                src="image.jpg/fotoprofesional.jpg" 
+                alt="" 
+                width="400" 
+                height="400"
+                loading="eager"
+              >
+            </div>
 
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="skills" id="skills">
+      <h2>Tecnologias que Utilizo</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="devicon-html5-plain"></i>
+          <span>HTML5</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-css3-plain"></i>
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-javascript-plain"></i>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-react-original"></i>
+          <span>React</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-flutter-plain"></i>
+          <span>Flutter</span>
+        </div>
+        <div class="skill">
+          <i class="devicon-docker-plain"></i>
+          <span>Docker</span>
+      </div>
+      <div class="skill">
+          <i class="devicon-cplusplus-plain"></i>
+          <span>C++</span>
+      </div>
+      <div class="skill">
+          <i class="devicon-python-plain"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill">
+    <i class="devicon-pandas-plain"></i>
+    <span>Pandas</span>
+  </div>
+<div class="skill">
+  <i class="fa-solid fa-chart-column"></i>
+  <span>Power BI</span>
+</div>
+
+      </div>
+    </section>
+    <section class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+
+        <h2 id="testimonials-title">Depoimentos</h2>
+        <p class="testimonials-subtitle">
+          O que clientes e parceiros dizem sobre meu trabalho
+        </p>
+
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “Trabalhar com a Mili foi uma experiência excelente.
+              Comunicação clara, entrega rápida e um resultado acima do esperado.”
+            </p>
+            <div class="testimonial-author">
+              <strong>Ana Souza</strong>
+              <span>Product Manager · Startup Tech</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “Profissional extremamente dedicada e organizada.
+              Recomendo para qualquer projeto front-end.”
+            </p>
+            <div class="testimonial-author">
+              <strong>Carlos Mendes</strong>
+              <span>CTO · Agência Digital</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “Entendeu exatamente o que precisávamos e transformou
+              a ideia em uma interface moderna e funcional.”
+            </p>
+            <div class="testimonial-author">
+              <strong>Fernanda Lima</strong>
+              <span>UX Designer</span>
+            </div>
+          </article>
 
         </div>
+      </div>
+    </section>
+     <!-- PROJECTS SECTION -->
+<section id="projects" class="projects-section" aria-labelledby="projects-title">
+  <div class="container">
+    <h2 id="projects-title">Projetos</h2>
+    <div class="project-card">
+      <!-- Carrusel -->
+      <div class="carousel">
+        <img src="image.jpg/1.png" class="active" alt="Tela 1 do app">
+        <img src="image.jpg/2.png" alt="Tela 2 do app">
+        <img src="image.jpg/3.png" alt="Tela 3 do app">
+        <img src="image.jpg/4.png" alt="Tela 4 do app">
+      </div>
+      <!-- Información -->
+      <div class="project-info">
+        <h3 class="project-name">App Tastee</h3>
+        <p class="project-role">Desenvolvimento Mobile</p>
+        <p class="project-description">
+         Aplicativo de delivery desenvolvido com Flutter e Dart. Possui navegação entre telas, componentes reutilizáveis e gerenciamento de pedidos, com foco em performance e experiência do usuário.
+        </p>
+        <p class="project-tech">
+          Tecnologias: Flutter · Dart · Material Design
+        </p>
+        <div class="project-links">
+  <a href="#" target="_blank">Ver em GitHub</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+          <div class="container">
+            <h2 id="contact-title">Disponível para oportunidades e colaborações.</h2>
+            <!-- Formulário de contato -->
+          </section>
+      </main><section class="contact-form-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@email.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Conte um pouco sobre sua ideia ou projeto"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            Enviar mensagem
+          </button>
+
+        </form>
+      </div>
     </section>
 
-    <section id="projects" class="card">
-        <h2></section>/h2>
-        <ul>
-            <li><strong></strong></li>
-            <li><strong></strong></li>
-            <li><strong></strong></li>
-        </ul>
-    </section>
-    
+
+      <!-- FOOTER -->
+      <footer class="site-footer" role="contentinfo">
+        <div class="container">
+          <p>&copy; 2024 Milianny Cova. Todos os direitos reservados.</p>
+          <p>Desenvolvido com <i class="fa-solid fa-heart" aria-label="amor"></i> e código</p>
+        </div>
+      </footer>
+
+      <!-- Scripts al final para mejor performance -->
+      <script src="traduccion.js" defer></script>
+      <script src="main.js" defer></script>
     </body>
-</html>
+    </html>

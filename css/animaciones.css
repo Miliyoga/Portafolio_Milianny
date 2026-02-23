@@ -44,3 +44,9 @@
 body {
     font-family: 'Helios Extended', sans-serif;
 }
+
+button {
+    font-family: 'Helios Extended', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color : white;
+}

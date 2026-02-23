@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta tags esenciales -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <meta name="description" content="Projetos desenvolvidos por Milianny Cova - Portfólio Front-end e Mobile.">
+  <meta name="keywords" content="projetos, portfólio, front-end, flutter, react">
+  <meta name="author" content="Milianny Cova">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Projetos | Milianny Cova">
+  <meta property="og:description" content="Confira meus projetos profissionais e pessoais.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Projetos | Milianny Cova</title>
+</head>
+
+<body>
+
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- NAVBAR (MISMA DO INDEX) -->
+  <header class="navbar" role="banner">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html#home">Mili</a>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="index.html#curriculum">Currículo</a></li>
+          <li><a href="projects.html" class="active">Projetos</a></li>
+          <li><a href="index.html#contact">Contato</a></li>
+          <li><a href="index.html#about">Sobre Mim</a></li>
+        </ul>
+      </nav>
+
+      <div class="language-selector">
+        <button class="lang-btn active">PT</button>
+        <button class="lang-btn">EN</button>
+        <button class="lang-btn">ES</button>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main id="main-content">
+    <!-- PROJECTS PAGE -->
+    <section class="projects-section">
+      <div class="container">
+        <h1>Projetos</h1>
+        <p class="hero-description">
+          Aqui você encontra alguns dos projetos que desenvolvi,
+          explorando aplicações web e mobile com foco em experiência do usuário.
+        </p>
+        <!-- PROJECT CARD -->
+        <article class="project-card">
+          <div class="carousel">
+            <div class="carousel-track">
+              <img src="image.jpg/1.png" alt="App Tastee - Tela 1" class="active">
+              <img src="image.jpg/2.png" alt="App Tastee - Tela 2">
+              <img src="image.jpg/3.png" alt="App Tastee - Tela 3">
+              <img src="image.jpg/4.png" alt="App Tastee - Tela 4">
+            </div>
+          </div>
+          <!-- Info -->
+          <div class="project-info">
+            <h3 class="project-title">App Tastee</h3>
+            <p class="project-description">
+              Aplicativo mobile de delivery desenvolvido com
+              <strong>Flutter</strong> e <strong>Dart</strong> durante a
+              <strong>Imersão Mobile da Alura</strong>.
+            </p>
+            <p class="project-description">
+              O projeto explora construção de interfaces modernas,
+              navegação entre telas, componentes reutilizáveis e foco
+              em uma experiência fluida e responsiva.
+            </p>
+            <p class="project-tech">
+              Tecnologias: Flutter · Dart · Material Design
+            </p>
+            <a href="#" class="btn-primary">Ver projeto</a>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (IGUAL AO INDEX) -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Milianny Cova. Todos os direitos reservados.</p>
+      <p>Desenvolvido com <i class="fa-solid fa-heart"></i> e código</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="traduccion.js" defer></script>
+  <script src="main.js" defer></script>
+
+</body>
+</html>
